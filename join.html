@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./join.css">
+    <title>Join Us</title>
+</head>
+<body>
+    <section class="contact">
+        <h2 data-tilt>Contact <span>Us</span></h2>
+        <div class="container contact-container" data-aos="zoom-in-up">
+            <aside class="contact-aside" data-tilt>
+                <ul>
+                    <li>
+                        <p>Address</p>
+                    </li>
+                    <li>
+                        <img src="./images/phone.png" alt="">
+                        <h4>+12345678910</h4>
+                    </li>
+                    <li>
+                        <img src="./images/mail.png" alt="">
+                        <h4>whaohooo@gmail.com</h4>
+                    </li>
+                    <li>
+                        <img src="./images/flag-zone.png" alt="">
+                        <ul class="locations">
+                            <li><h4>Woreda 6, Youth center</h4></li>
+                            <li><h4>Woreda 6, Youth center</h4></li>
+                            <li><h4>Woreda 6, Youth center</h4></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="./images/location.png" alt="">
+                        <h4>Addis Ababa Ethiopia</h4>
+                    </li>
+                </ul>
+            </aside>
+
+            <form action="https://formspree.io/f/mbjnbqyq" method="POST">
+                <label for="">First Name</label>
+                <input type="text" class="inputs" name="first-name" placeholder="First Name" required>
+                
+                <label for="">Last Name</label>
+                <input type="text" class="inputs" name="last-name" placeholder="Last Name" required>                
+                
+                <label for="">Email</label>
+                <input type="email" class="inputs" name="email" placeholder="sample@gmail.com" required>
+                
+                <label for="">Comments</label>
+                <textarea name="message" rows="7" placeholder="Your Comment" required></textarea>
+                
+                <button type="submit" class="nav-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300, 
+            duration: 1400, 
+        });
+    </script>
+    <script src="./vanilla-tilt.js"></script>
+</body>
+</html>
