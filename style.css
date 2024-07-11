@@ -468,7 +468,7 @@ span {
     }
     .home-img::before{
         font-size: 15rem; 
-        left: 35%;
+        /* left: 35%; */
     }
 }
 
@@ -595,8 +595,11 @@ span {
     html{
         font-size: 30%;
     }
+    section{
+        min-height: initial;
+    }
     .home-img::before{
-        font-size: 10rem; 
+        font-size: 12rem; 
         left: 50%;
     }
     .row img {
@@ -607,6 +610,7 @@ span {
     }
     .row{
         width: 65%;
+        margin: auto;
     }
 
     .navbar{
@@ -629,5 +633,11 @@ span {
     .footer .social a{
         height: 40px;
         width: 40px;
+    }
+}
+
+@media (max-width:350px) {
+    .row{
+        margin-left: 2rem;
     }
 }
