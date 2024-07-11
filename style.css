@@ -317,7 +317,7 @@ span {
     font-weight: 700;
     color: var(--text-color);
     border-radius: 2px solid #5d6c83;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .box i{
@@ -328,6 +328,7 @@ span {
 }
 
 .box a:hover{
+    padding-bottom: 10px;
     border-bottom: 2px solid var(--main-color);
 }
 
@@ -399,7 +400,7 @@ span {
     text-align: center;
 }
 
-.star{
+.starF{
     color: gold;
     font-size: 2rem;
 }
@@ -463,13 +464,21 @@ span {
 
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 55%; 
+    }
+    .home-img::before{
+        font-size: 15rem; 
+        left: 35%;
     }
 }
 
 @media (max-width:991px) {
     #menu-icon {
         display: block;
+    }
+
+    .topText {
+        margin-top: 10rem;
     }
 
     .navbar {
@@ -523,6 +532,10 @@ span {
     .home {
         flex-direction: column;
     }
+    .home-img::before{
+        font-size: 15rem; 
+        left: 50%;
+    }
 
     .home-content h3{
         font-size: 4.5rem;
@@ -567,6 +580,10 @@ span {
         width: 80vw;
         margin-top: 8rem;
     }
+    .home-img::before{
+        font-size: 13rem; 
+        left: 50%;
+    }
 
     .about-img img {
         width: 70vw;
@@ -576,6 +593,41 @@ span {
 
 @media (max-width:450px) {
     html{
-        font-size: 50%;
+        font-size: 30%;
+    }
+    .home-img::before{
+        font-size: 10rem; 
+        left: 50%;
+    }
+    .row img {
+        height: auto;
+        width: 100%;
+        border-radius: 27px;
+        margin-bottom: 1.4rem;
+    }
+    .row{
+        width: 65%;
+    }
+
+    .navbar{
+        width: 150px;
+    }
+    .box{
+        height: initial;
+        width: 80%;
+        margin: auto;
+    }
+    .box h2 {
+        font-size: 20px;
+    }
+    .review-item{
+        min-width: initial;
+    }
+    .footer .copyright{
+        font-size: 11px;
+    }
+    .footer .social a{
+        height: 40px;
+        width: 40px;
     }
 }
